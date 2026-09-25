@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, Mom</title>
+  <meta name="description" content="A birthday page for the most loved woman in our family." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <div id="petals" aria-hidden="true"></div>
+
+  <header class="hero">
+    <p class="eyebrow">A little corner of the internet, just for you</p>
+    <h1>Happy Birthday,<br><em>Mom</em></h1>
+    <div class="divider"></div>
+    <p class="sub">
+      Every year, the world gets a little luckier — because it still has you in it.
+      This one's for you.
+    </p>
+    <div class="scroll-cue">
+      <span>scroll down</span>
+      <span>↓</span>
+    </div>
+  </header>
+
+  <section id="letter">
+    <p class="section-kicker reveal">From my heart to yours</p>
+    <h2 class="section-title reveal">A Letter to My Mother</h2>
+    <div class="letter reveal">
+      <p>Happy birthday, Mom.</p>
+      <p>
+        I have loved you all my life — even in the seasons when you could
+        only love me for mine. Long before I understood what that meant,
+        I felt your heartbeat, and somehow I have carried it with me ever
+        since. It is in the way I love, the way I show up, the way I
+        keep coming home to you.
+      </p>
+      <p class="highlight">
+        I felt your heartbeat before I understood my own — and I have
+        loved you with it every day since.
+      </p>
+      <p>
+        Thank you for every version of yourself you have given us: the
+        strength, the softness, the sacrifice, the shelter. Thank you
+        for being someone I get to hug, laugh with, dress up for, and
+        show off proudly as mine.
+      </p>
+      <p>
+        I see you. I love you. Today, and every single day after this one.
+      </p>
+      <p class="signature">— Your daughter, Lebogang</p>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <p class="section-kicker reveal">A life, in pictures</p>
+    <h2 class="section-title reveal">Moments With You</h2>
+
+    <div class="gallery reveal">
+      <figure>
+        <img src="images/photo1.jpg" alt="Mom smiling in a cream wrap outfit" data-filename="photo1.jpg" data-caption="Effortlessly her" loading="lazy" />
+        <figcaption>Effortlessly her</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/photo2.jpg" alt="Mom in an olive trench coat at a family gathering" data-filename="photo2.jpg" data-caption="Ready for the gathering" loading="lazy" />
+        <figcaption>Ready for the gathering</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/photo3.jpg" alt="Mom in a green cape seated at a celebration table" data-filename="photo3.jpg" data-caption="The room brightens when she walks in" loading="lazy" />
+        <figcaption>The room brightens when she walks in</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/photo4.jpg" alt="Mom smiling candidly at an event" data-filename="photo4.jpg" data-caption="That smile, always" loading="lazy" />
+        <figcaption>That smile, always</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/photo5.jpg" alt="Mom hugging her daughter outdoors" data-filename="photo5.jpg" data-caption="The love of my life" loading="lazy" />
+        <figcaption>The love of my life</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/photo6.jpg" alt="Mom holding her grandson" data-filename="photo6.jpg" data-caption="Nsika's best human" loading="lazy" />
+        <figcaption>Nsika's best human</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/photo7.jpg" alt="Mom in traditional Zulu attire with her son" data-filename="photo7.jpg" data-caption="Crowned in tradition, with my brother" loading="lazy" />
+        <figcaption>Crowned in tradition, with my brother</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/photo8.jpg" alt="Mom and her daughter wearing paper party crowns" data-filename="photo8.jpg" data-caption="Just us, wearing paper crowns" loading="lazy" />
+        <figcaption>Just us, wearing paper crowns</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="finale">
+    <p class="section-kicker reveal">Make a wish</p>
+    <div class="candles reveal">🕯️ 🕯️ 🕯️ 🕯️ 🕯️</div>
+    <p class="love-note reveal">
+      Here's to more birthdays, more hugs, more heartbeats felt
+      across every distance.
+    </p>
+    <p class="duet reveal">
+      <span>I love you, Mom.</span>
+      <span class="reply">"I love you more, always."</span>
+    </p>
+    <button id="heart-btn" class="heart-btn reveal">Send Her Love 💚</button>
+  </section>
+
+  <footer>
+    Made with love for Mom · <span id="year"></span>
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <img src="" alt="" />
+    <p class="lightbox-cap"></p>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelector('.lightbox-close').addEventListener('click', () => {
+      document.getElementById('lightbox').classList.remove('open');
+    });
+  </script>
+  <script src="assets/script.js"></script>
+</body>
+</html>
